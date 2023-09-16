@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado da Busca</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Resultado da Busca</h1>
+    <p>Nome: {{ contato['nome'] }}</p>
+    <p>Telefone: {{ contato['telefone'] }}</p>
+    <p>Imagem:</p>
+    <img src="{{ url_for('static', filename=contato['imagem']) }}" alt="{{ contato['nome'] }}">
+    <br>
+    <a href="/">Voltar</a>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plataforma de Busca de Contatos</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Plataforma de Busca de Contatos</h1>
+    <form action="/buscar" method="post">
+        <label for="numero">Digite o número do contato:</label>
+        <input type="text" id="numero" name="numero" required>
+        <button type="submit">Buscar</button>
+    </form>
+</body>
+</html>
